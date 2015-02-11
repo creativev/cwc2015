@@ -17,7 +17,13 @@ def main
       match_date DATETIME,
       team1 TEXT,
       team2 TEXT,
-      venue TEXT
+      venue TEXT,
+      score1 TEXT,
+      overs1 TEXT,
+      score2 TEXT,
+      overs2 TEXT,
+      won TEXT,
+      result TEXT
     );
     SQL
     db.query(table_sql).close
