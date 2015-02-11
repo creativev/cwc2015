@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp"
+    tools:context=".MainActivity$PlaceholderFragment"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10:00 AM"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imgCountry1"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtTime"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/flag_india" />
+
+    <TextView
+        android:id="@+id/txtCountry1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/imgCountry1"
+        android:layout_alignTop="@+id/imgCountry1"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/imgCountry1"
+        android:layout_toRightOf="@+id/imgCountry1"
+        android:gravity="center_vertical"
+        android:text="IND"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/imgCountry1"
+        android:layout_alignTop="@+id/imgCountry1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="vs"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/imgCountry2"
+        android:layout_width="72dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgCountry1"
+        android:src="@mipmap/flag_australia" />
+
+    <TextView
+        android:id="@+id/txtCountry2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/imgCountry1"
+        android:layout_alignTop="@+id/imgCountry1"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imgCountry2"
+        android:layout_toStartOf="@+id/imgCountry2"
+        android:gravity="center_vertical"
+        android:text="AUS"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtScore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgCountry1"
+        android:layout_marginTop="10dp"
+        android:text="150/6" />
+
+    <TextView
+        android:id="@+id/txtOvers1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtScore1"
+        android:text="50 Overs" />
+
+    <TextView
+        android:id="@+id/txtScore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgCountry2"
+        android:layout_alignStart="@+id/imgCountry2"
+        android:layout_below="@+id/imgCountry2"
+        android:layout_marginTop="10dp"
+        android:text="150/6" />
+
+    <TextView
+        android:id="@+id/txtOvers2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtScore2"
+        android:layout_toEndOf="@+id/txtCountry2"
+        android:layout_toRightOf="@+id/txtCountry2"
+        android:text="20 Overs" />
+
+    <TextView
+        android:id="@+id/txtVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtOvers1"
+        android:text="Hagel, Oval, NZ"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/txtMatchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtVenue"
+        android:gravity="center_horizontal"
+        android:text="India won by 3 wickets"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
