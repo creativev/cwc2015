@@ -24,7 +24,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/txtTime"
         android:layout_marginTop="8dp"
-        android:src="@mipmap/flag_india" />
+        android:src="@mipmap/IND.png" />
 
     <TextView
         android:id="@+id/txtCountry1"
@@ -56,7 +56,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/imgCountry1"
-        android:src="@mipmap/flag_australia" />
+        android:src="@mipmap/AUS.png" />
 
     <TextView
         android:id="@+id/txtCountry2"
