@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Cricket World Cup 2015 Schedule</string>
+    <string name="empty" />
+    <string name="txt_vs">vs</string>
 </resources>
