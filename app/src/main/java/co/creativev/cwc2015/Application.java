@@ -2,6 +2,8 @@ package co.creativev.cwc2015;
 
 import android.util.Log;
 
+import com.google.android.gms.analytics.GoogleAnalytics;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -15,6 +17,8 @@ public class Application extends android.app.Application {
     @Override
     public void onCreate() {
         initDb();
+        GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+        analytics.newTracker(R.xml.tracker);
     }
 
     private void initDb() {

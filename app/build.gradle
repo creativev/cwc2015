@@ -6,15 +6,26 @@ android {
 
     defaultConfig {
         applicationId "co.creativev.cwc2015"
-        minSdkVersion 11
+        minSdkVersion 10
         targetSdkVersion 21
-        versionCode 1
+        versionCode 2
         versionName "1.0"
     }
+
+    signingConfigs {
+        release {
+            storeFile file('/Users/anagri/Dropbox/android/keystore/creativev')
+            storePassword '(Ft&4VG3ZT'
+            keyAlias 'co.creativev.cwc2015'
+            keyPassword 'tqhg4m8@^d'
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
@@ -22,4 +33,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.google.android.gms:play-services:6.5.87'
 }

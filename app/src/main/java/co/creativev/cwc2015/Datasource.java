@@ -9,6 +9,7 @@ import android.util.Log;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.TimeZone;
 
 import static co.creativev.cwc2015.Constant.LOG_TAG;
 
@@ -24,6 +25,9 @@ public class Datasource {
             "team2", "score2", "overs2",
             "venue", "won", "result"};
     public static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    static {
+        DATE_FORMAT.setTimeZone(TimeZone.getTimeZone("UTC"));
+    }
     private final DbHelper dbHelper;
     private final SQLiteDatabase database;
 
